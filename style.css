@@ -1,0 +1,99 @@
+/*Css Rest*/
+*{
+  margin: 0;
+  padding:0;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: rgb(163, 199, 201);
+}
+/*tags de ajuste*/
+p{
+    visibility: hidden;
+}
+
+#title1{
+    color:rgb(62, 194, 139);
+    background: linear-gradient(rgb(141, 141, 141), rgb(31, 31, 31));
+    height: 2rem;
+    border-radius: 10px;
+    border:1px solid black;
+}
+#title2{
+    color:rgb(247, 231, 91);
+    background: linear-gradient(rgb(141, 141, 141), rgb(31, 31, 31));
+    height: 2rem;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+#title3{
+    color:rgb(241, 132, 113);
+    background: linear-gradient(rgb(141, 141, 141), rgb(31, 31, 31));
+    height: 2rem;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+#title4{
+    color:rgb(219, 219, 219);
+    background: linear-gradient(rgb(141, 141, 141), rgb(31, 31, 31));
+    height: 2rem;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+/*ajuste de botão superior*/
+.botS{
+    margin-left: 210px;
+}
+
+
+/*separação de blocos*/
+.espa{
+    padding-top:50px;
+}
+
+/*Edição de  Alas*/
+.suV ul, li{
+    text-align: center;
+    height: 20rem;
+    background-color: rgb(108, 199, 164);
+    border-radius: 10px;
+    border:2px solid black;
+}
+.suAm ul, li{
+    text-align: center;
+    height: 20rem;
+    background-color: rgb(247, 244, 91);
+    border-radius: 10px;
+    border:2px solid black;
+}
+
+.suR ul, li{
+    text-align: center;
+    height: 20rem;
+    background-color: rgb(241, 90, 64);
+    border-radius: 10px;
+    border:2px solid black;
+}
+
+.suE ul, li{
+    text-align: center;
+    height: 20rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    border:2px solid black;
+}
+
+
+.rodaZ{
+	padding-top:20px;
+	font-size: 13px;
+	width:100%;
+	background: rgba(25,46,54,.9);
+	color:#fff;
+    height:0 auto;
+    text-align: center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Css-Externo-->
+    <link rel="stylesheet" href="style.css">
+    <!--FontWasome-->
+    <script src="https://kit.fontawesome.com/e3b58b8a21.js" crossorigin="anonymous"></script>
+    <!--GoogleFonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script>
+        $(function () {
+            var contadorid = 0;
+            console.log("ready!");
+
+
+
+            $('#adicionarverde').click(function () {
+                //alert("teste");
+                var pessoa = $("#pessoa").val();
+                console.log(pessoa);
+
+                var html = '<p" role="alert" id=componente' + contadorid + '></p>';
+                html += pessoa + '<name=lista id=lista' + contadorid + '>';
+                contadorid++;
+                $("#sortable0").append(html);
+
+            });
+        });
+
+    </script>
+    <title>Hospimec!</title>
+    <script>
+        $(function () {
+            $("#sortable0, #sortable1, #sortable2, #sortable3").sortable({
+                connectWith: ".connectedSortable"
+            }).disableSelection();
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="container espa">
+        <div class="row">
+
+            <div class="col-12">
+                <h1>Bem Vindos ao Hospimec <i class="fas fa-hospital"></i></h1>
+            </div>
+            <div class="col">
+                <input class="form-control botS" type="text" id="pessoa">
+            </div>
+
+            <div class="col">
+                <button id="adicionarverde" type="button" class="btn btn-dark">Adicionar a Espera</button>
+            </div>
+       
+    <div class="container espa">
+        <div class="row">
+            <div class="col suE" id="verde">
+                <h4 id="title4">Sala de Espera <i class="fas fa-fw fa-heartbeat"></i></h4>
+                <ul id="sortable0" class="connectedSortable">
+
+                </ul>
+            </div>
+
+            <div class="col suV" id="verde">
+                <h4 id="title1">Ala Verde <i class="fas fa-fw fa-heart"></i></h4>
+                <ul id="sortable1" class="connectedSortable">
+                    <p class="list-group-item ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    </p>
+
+                </ul>
+
+            </div>
+            <div class="col suAm" id="amarela">
+                <h4 id="title2">Ala Amarela <i class="fas fa-fw fa-heart-broken"></i></h4>
+                <ul id="sortable2" class="connectedSortable">
+                    <p class="list-group-item ui-state-default"> <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    </p>
+
+                </ul>
+
+            </div>
+            <div class="col suR" id="vermelho">
+                <h4 id="title3">Ala Vermelha <i class="fas fa-fw fa-exclamation-triangle"></i></h4>
+                <ul id="sortable3" class="connectedSortable">
+                    <p class="list-group-item ui-state-default"> <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                    </p>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+<footer class="rodaZ"><i class="far fa-fw fa-copyright"></i> Todos os direitos autorais reservados para o Hospmec</footer>
+
+</body>
+
+</html>
